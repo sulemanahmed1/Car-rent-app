@@ -2,8 +2,7 @@ import { CarProps } from "@/types";
 
 export async function fetchCars() {
     const headers = {
-        'X-RapidAPI-Key': '2c38d68174msha01f98cde8d80a1p1466b0jsnc143a8ed2aa1',
-		'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
+      
     }
 
     const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla', {
@@ -31,5 +30,5 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   };
   
 export const generateCarImageUrl = (car: CarProps, angle: string) => {
-    
+
 }
